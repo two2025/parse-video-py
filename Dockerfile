@@ -10,13 +10,14 @@ COPY ./templates /app/templates
 COPY ./utils /app/utils
 COPY ./requirements.txt /app/
 COPY ./main.py /app/
+COPY ./favicon.png /app/
 
 
 # 安装 Python 应用程序所需的依赖包
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 暴露 FastAPI 应用程序的端口
-EXPOSE 8000
+EXPOSE 4398
 
 # 启动 FastAPI 应用程序
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "4398"]
