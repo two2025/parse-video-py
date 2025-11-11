@@ -10,7 +10,7 @@ COPY ./templates /app/templates
 COPY ./utils /app/utils
 COPY ./requirements.txt /app/
 COPY ./main.py /app/
-COPY ./favicon.ico /app/
+COPY ./favicon.png /app/
 
 
 # 安装 Python 应用程序所需的依赖包
